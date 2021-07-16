@@ -12,16 +12,19 @@ body {
     font-family: "Syne", Arial, Helvetica, sans-serif;
     font-size: 32px;
     line-height: 1.25;
-
-    background-color: #f4e6d8;
-    color: #15403d;
-    margin: 240px auto 40px auto;
+    background-color: #f5e6d9;
+    color: #15403D;
+    margin: 240px auto 200px auto;
     max-width: 1120px;
 }
 
 p {
     font-family: "Syne Extra";
     color: #e5745d;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 header {
@@ -32,6 +35,15 @@ header {
     padding: 32px;
     text-align: center;
     z-index: 1;
+}
+
+header img {
+    width: 136px;
+    transition: width 0.5s;
+}
+
+header.scrolled img {
+    width: 64px;
 }
 
 section {
@@ -48,4 +60,9 @@ section:nth-child(odd) {
 
 section div {
     padding: 40px;
+    position: relative;
+}
+
+section img {
+    position: relative;
 }
